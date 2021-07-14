@@ -37,6 +37,10 @@ cada item del array personas (por lo que ngFor vendria a ser un .map/.forEach), 
 
 suponiendo que dentro del array personas encontramos un objeto con keys *nombre* y *apellido*, imprimimos primero su indice (el cual como ya se sabe, iniciara en 0), luego su nombre y finalmente su apelldo, y repetira esto con cada elemento del array
 
+
+
+
+
     
 
 

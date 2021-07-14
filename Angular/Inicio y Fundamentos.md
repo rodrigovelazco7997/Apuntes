@@ -193,6 +193,7 @@ Dentro del CLI de Angular, existe un comando que simplifica el inicio de la crea
 
     ng generate componente *nombre-del-componente*
     ng g c *nombre-del-componente*
+    ng g c *nombre-del-componente* --skipTests=true //Evitar la creacion de los archivos spec
 
 Esto nos creará una carpeta de componente con el nombre que le hayamos pasado, donde adentro seteará cuatro archivos ( HTML - CSS - TS - SPEC ) para iniciar nuestro codeo mas rapido.
 
