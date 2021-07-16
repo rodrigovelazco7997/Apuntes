@@ -39,6 +39,38 @@ Ts te pide inicializar la variable antes de utilizarla dentro del decorador @Inp
     }
 
 
+## Event Binding
+
+Para poder enviar informacion desde un componente hijo hacia un componente padre, utilizaremos el decorador @Output().
+Aqui, en el caso al menos de los formularios, lo que debemos hacer es inicializar el decorador con una funcion llamada Event Emitter, la cual debe ser tipada<tipo>
+
+Esa variable sera un emitidor de evento, el cual posee metodos propios que seran utilizados para compartir la informacion con el padre (eventemitter.emit())
+
+    @Output() nombrePersona=new EventEmitter<string>
+
+    ..component.html
+
+    <app-persona
+    (nombrePersona)="persona"></app-persona>
+
+    ...app.ts
+
+    export class Persona{
+        persona:string=""
+    }
+
+    ...app.html
+
+    <div>{{persona}}</div>
+
+
+
+
+    ...app.html
+
+
+
+
          
 
 
